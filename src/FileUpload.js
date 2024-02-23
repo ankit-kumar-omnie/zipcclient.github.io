@@ -14,7 +14,7 @@ const FileUpload = () => {
       selectedFiles.forEach((file) => {
         formData.append('pdfFiles', file);
       });
-      const response = await axios.post('http://localhost:3000/convert', formData, {
+      const response = await axios.post('https://zipserver.zeabur.app/convert', formData, {
         responseType: 'blob' 
       });
   
